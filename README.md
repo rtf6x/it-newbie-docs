@@ -479,6 +479,7 @@ let myVar3 = { a: 1 }; // Ссылка не меняется, нужно const
 const myVar4 = { a: 1 }; // Ссылка меняется, нужно let
 const myVar5 = { a: 1 }; // Норм
 
+myVar5.b = 2; // myVar5 = { a: 1, b: 2 }
 myVar4 = { b: 1 }; // TypeError: invalid assignment to const
 ```
 
