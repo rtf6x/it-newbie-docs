@@ -351,6 +351,139 @@ alert('This is not appropriate!');
 - Можно задавать переменные и хранить в них важную (и не очень) информацию
 - Можно делать запросы к внешним источникам (API)
 
+#### Что важно знать в JS с самого начала?
+
+- window
+- Типы данных
+- Методы определения переменных
+- Методы и аттрибуты типов переменных
+- Многопоточность (выполнение нескольких операций параллельно)
+
+#### 3.3.1. Window
+
+Window - это глобальный объект на странице в браузере (в среде Node.js
+его нет, вместо него используется global). Фактически, любая переменная,
+объявленная в глобальном контексте, попадает в window. То есть, к такой
+переменной можно обратиться как напрямую, так и через window.
+
+Например:
+```javascript
+var something = 'something';
+console.log('something', something); // "something"
+console.log('window.something', window.something); // "something"
+```
+
+Есть ещё глобальные объекты `document`, `screen`, `navigator`...
+Как-нибудь посмотрите что они из себя представляют, или почитайте на
+[w3c](https://www.w3schools.com/js/js_window.asp)
+
+Из `navigator` можно достать язык пользователя, например:
+```javascript
+const lang = navigator.language || navigator.userLanguage || 'en';
+```
+
+`document` используется для получения HTML элемента, добавления нового,
+а также создания события:
+```javascript
+document.addEventListener('DOMContentLoaded', function (event) {
+  document.querySelector('a').addEventListener('click', function (e) {
+    alert('CLICK!');
+    document.querySelector('p').innerText = 'CLICK!';
+    return false;
+  });
+  
+  const p = document.createElement("p");
+  p.innerHTML = "Lorem ipsum";
+  p.className = "someClass";
+  p.setAttribute("id", "someId");
+  document.body.appendChild(p);
+});
+```
+
+#### 3.3.2. Типы данных
+
+Про типы можно почитать
+[тут](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
+
+Важно что примитивы передаются в функцию в виде значения, а "сложные"
+передаются в виде ссылки. Например:
+
+```javascript
+const someObject = { a: 1, b: 2 };
+const someString = 'test';
+
+const someFunc = (obj, str) => {
+  obj.a = 2;
+  str = 'hello?';
+}
+
+someFunc(someObject, someString);
+
+console.log(someObject); // { a: 2, b: 2 }
+console.log(someString); // 'test'
+```
+
+Итак, что произошло?
+1. Объект, переданный в функцию someFunc по ссылке, 
+   был изменён. Как так, ведь он же константа! Нет, константой является 
+   только сама ссылка на объект, но внутренности можно менять.
+2. Строка, переданная в виде значения была изменена только внутри самой
+   функции и не изменился снаружи.
+
+#### 3.3.3. Методы определения переменных
+
+Есть 3 метода:
+- `var something = 'something';`
+- `const something = 'something';`
+- `let something = 'something';`
+
+var - устаревший метод, впрочем, вполне рабочий, и в определённых условиях,
+им можно пользоваться. Его особенность в том, что определение с его помощью,
+всплывает выше замыкания (замыкания - отдельная история, считайте что это
+просто скобки, для упрощения). Например:
+
+```javascript
+for (var i = 0; i < 1; i++) {
+  var myVar = 'bloop';
+}
+
+console.log(myVar); // "bloop"
+```
+
+Это грозит тем, что вам больше недоступно это имя для другой переменной.
+Также, это создаёт проблемы для очистки памяти, которым движок постоянно
+занимается (читай про
+[GarbageCollector](https://learn.javascript.ru/garbage-collection)).
+
+let и const не всплывают выше своего блока кода (замыкания). Также, у них
+есть разница между собой: const является константой (её нельзя менять).
+
+```javascript
+for (var i = 0; i < 1; i++) {
+  const myVar = 'bloop';
+}
+
+console.log(myVar); // Error: myVar is undefined
+```
+
+Следует всегда писать const, если вы не собираетесь менять эту переменную.
+Так правильно и так принято (таков закон джунглей). Также, если объявляется
+не-примитивный тип данных, следует сразу объявить его как константу, т.к.
+будет меняться только его внутрянка (если не собираетесь менять саму ссылку,
+конечно).
+
+```javascript
+const myVar = 'bloop'; // Норм
+let myVar2 = 'bloop'; // Переменная не меняется, нужно const
+let myVar3 = { a: 1 }; // Ссылка не меняется, нужно const
+const myVar4 = { a: 1 }; // Ссылка меняется, нужно let
+const myVar5 = { a: 1 }; // Норм
+
+myVar4 = { b: 1 }; // TypeError: invalid assignment to const
+```
+
+#### 3.3.4. Методы и аттрибуты типов переменных
+
 ### 3.4. Фреймворки
 
 ## 4. С чего начать?
@@ -654,13 +787,13 @@ Next.js (React) / Nuxt.js (Vue)
 
 Глубокое понимание JS
 
-Области видимости
-
-Замыкания
-
 Промисы
 
 Генераторы
+
+EventLoop
+
+GarbageCollector
 
 EcmaScript
 
@@ -673,8 +806,6 @@ EcmaScript
 Тестирование фронтенда
 
 Скорость разработки, Помодоро, Корейское программирование
-
-Типы данных
 
 FontSquirrel
 
