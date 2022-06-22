@@ -182,9 +182,34 @@ CSS подключается в `HTML` в таком виде:
 
 А ещё есть SCSS, SASS, LESS и Stylus! Если хорошо знать CSS, с этими ребятами не будет особых проблем.
 В основном, они добавляют вложенность элементов и встроенные функции. Ну и переменные там, например.
-Выглядит это так:
+Выглядит это так (SCSS):
 ```css
+$background: #2d2d2d;
+
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin border_radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin boxed() {
+  padding: 5px 10px;
+  border: 1px solid darken($link_color, 5);
+  background: $box_background;
+  text-align: center;
+}
+
 .wrapper {
+  background: $background;
   padding: 0;
   margin: 0 auto;
 
@@ -205,6 +230,11 @@ CSS подключается в `HTML` в таком виде:
   }
 }
 ```
+
+Когда-то, я написал несколько страничек для сравнения (чтобы самому понять в чём разница):
+- [SCSS](https://rootfox.cc/tests/css/scss/)
+- [SASS](https://rootfox.cc/tests/css/sass/)
+- [LESS](https://rootfox.cc/tests/css/less/)
 
 #### JS
 #### Node.js
