@@ -526,6 +526,22 @@ myVar4 = { b: 1 }; // TypeError: invalid assignment to const
 - values() - возвращает массив значений объекта (тот же объект без ключей)
 - [остальное тут](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
+#### 3.3.5. Многопоточность (выполнение нескольких операций параллельно)
+
+Важно понимать что JS - однопоточный язык (с костылями для многопоточности).
+
+Есть несколько допущений:
+- Промисы и запросы выполняются в другом потоке, не блокируя общий поток
+- setTimeout и setInterval тоже не блокируют
+- В Node.js многопоточность достигается запуском нескольких процессов
+  (если интересно, почитай про кластерный режим)
+
+Советую познакомиться с документацией:
+
+- [EventLoop](https://developer.mozilla.org/ru/docs/Web/JavaScript/EventLoop)
+- [YouTube (5m)](https://www.youtube.com/watch?v=377qAu37OTE)
+- [YouTube (18m)](https://www.youtube.com/watch?v=vIZs5tH-HGQ)
+
 ### 3.4. Фреймворки
 
 ## 4. С чего начать?
