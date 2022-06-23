@@ -521,9 +521,11 @@ myVar4 = { b: 1 }; // TypeError: invalid assignment to const
 - trim() - убрать пробелы в начале и конце строки
 - [остальное тут](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String)
 
+
 У объектов есть парочка важных функций:
 - keys() - возвращает массив ключей (свойств) объекта
 - values() - возвращает массив значений объекта (тот же объект без ключей)
+- [остальное тут](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 ### 3.4. Фреймворки
 
