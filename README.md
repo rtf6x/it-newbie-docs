@@ -813,57 +813,47 @@ Git - это система контроля версий. GitHub, GitLab, BitBu
 
 Наша малышка стала совсем взрослой... и спасла Китай. (с) Мушу
 
-## 10. Чему учиться дальше?
+На этом этапе, можно выходить на рынок и стараться пролезть в вакансию
+Junior-фронтендера. Будет очень много отказов, будь к этому готов и не
+переживай. Одни отказали - другие тоже откажут. Сто-пятидесятые возьмут.
 
-Pug/Jade
+Будущее - туманно. Зависит оно от команды, в которую залезешь. Там тебя научат
+плохому, даже не сомневайся.
 
-Cookies
+"Ему советовали поймать другого лисёнка, но он ответил: Слишком много уйдёт
+терпения, нет, не для того, чтобы поймать, для того чтобы полюбить его"
 
-*Storage
+Терпения тебе, юный падаван. И да пребудет с тобой сила.
 
-REST
+# Дополнение
 
-GraphQL
+## Чему учиться дальше?
 
-WebSockets
+- Promises
+- REST
+- [Localstorage, SessionStorage](https://learn.javascript.ru/localstorage)
+- [Cookies](https://learn.javascript.ru/cookie)
+- [Стиль](https://learn.javascript.ru/coding-style)
+- [ESLint](https://eslint.org/)
+- Стандарты EcmaScript
+- Debug
 
-ESLint / TSLint
 
-TypeScript
-
-Grunt / Gulp / WebPack / Rollup
-
-NPM
-
-Node.js
-
-SSR
-
-Next.js (React) / Nuxt.js (Vue)
-
-Глубокое понимание JS
-
-Промисы
-
-Генераторы
-
-EventLoop
-
-GarbageCollector
-
-EcmaScript
-
-Читать Хабр / Подкасты
-
-Конференции
-
-Методы CI/CD
-
-Тестирование фронтенда
-
-Скорость разработки, Помодоро, Корейское программирование
-
-FontSquirrel
+- EventLoop
+- GarbageCollector
+- GraphQL
+- WebSockets
+- TypeScript
+- TSLint
+- Grunt / Gulp / WebPack / Rollup
+- Node.js
+- SSR
+- Next.js (React) / Nuxt.js (Vue)
+- Читать Хабр / Подкасты
+- Конференции
+- Тестирование фронтенда
+- Методы CI/CD (как протестировать и запускать твой код)
+- Скорость разработки, Помодоро
 
 ## Принципы
 
@@ -908,3 +898,12 @@ Git Flow.
 
 Старайся всегда ставить под сомнение входные переменные. Проверяй что
 приходит в функцию (и приходит ли вообще).
+
+## Полезные ссылки
+
+### FontSquirrel
+Если нужно установить на сайт какой-то нестандартный шрифт, белка поможет.
+Хотя сначала стоит искать шрифты на Google Fonts:
+- [Google Fonts](https://fonts.google.com/)
+- [FontSquirrel](https://www.fontsquirrel.com/)
+
