@@ -235,6 +235,14 @@ CSS подключается в `HTML` в таком виде:
 - Понять наконец как использовать `PostCSS`
 - Порадоваться что всё работает в другом браузере, чтоб он сука сдох
 
+#### Важно:
+В CSS очень важно понимать теорию в части приоритета селекторов.
+Почитать про это можно тут:
+- [ru.hexlet.io](https://ru.hexlet.io/courses/layout-designer-basics/lessons/css-cascade/theory_unit)
+- [doka.guide](https://doka.guide/css/specificity/)
+- [MDN](https://developer.mozilla.org/ru/docs/Web/CSS/Specificity)
+
+#### Media Queries
 Ещё в `CSS` есть `Media Queries`.
 Они используются, чтобы изменить верстку под конкретный экран или девайс.
 Например, нам нужно чтобы при ширине экрана меньше 800 пикселей
@@ -249,6 +257,7 @@ em, rem, %, vw, vh...),
 }
 ```
 
+#### SCSS, SASS, LESS
 А ещё есть `SCSS`, `SASS`, `LESS` и `Stylus`! Если хорошо знать `CSS`, с этими
 ребятами не будет особых проблем.
 В основном, они добавляют вложенность элементов и встроенные функции.
@@ -310,6 +319,7 @@ $background: #2d2d2d;
 - [SASS](https://rootfox.cc/tests/css/sass/)
 - [LESS](https://rootfox.cc/tests/css/less/)
 
+#### Что ещё про CSS?
 Что ещё стоит изучить в контексте `CSS`:
 - Приоритеты селекторов в `CSS`
 - Блоки - инлайны
