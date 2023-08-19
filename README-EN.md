@@ -6,7 +6,7 @@ My name is Alexander, and I have around 12 years of experience working in variou
 
 I entered the IT field once because it seemed interesting and was something I started to excel at. Admittedly, I wanted to become a system administrator back then. Many people nowadays pursue IT for the big money, but at the beginning of your career, no one will pay a newcomer a hefty salary.
 
-Don't believe those who say, "Learn React and you'll immediately jump to a $250k per month salary."
+Don't believe those who say, "Learn React and you'll immediately jump to a $250k"
 
 What you need to understand from the very beginning:
 
