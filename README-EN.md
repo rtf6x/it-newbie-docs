@@ -1,8 +1,8 @@
-How to Enter the IT Field?
+# How to Enter the IT Field?
 
 My name is Alexander, and I have around 12 years of experience working in various IT companies. I've decided to write this text to assist beginners in the field. I hope it will be helpful.
 
-# 1. Why Are You Here?
+## 1. Why Are You Here?
 
 I entered the IT field once because it seemed interesting and was something I started to excel at. Admittedly, I wanted to become a system administrator back then. Many people nowadays pursue IT for the big money, but at the beginning of your career, no one will pay a newcomer a hefty salary.
 
@@ -26,7 +26,7 @@ On the other hand, if you choose a path like testing and get lucky with the star
 
 So, if you're still interested, let's continue.
 
-# 2. Choosing a Path
+## 2. Choosing a Path
 
 Which type of programming to choose: mobile, frontend, backend, games... This is for you to decide. I'll just share my opinion on these tracks.
 
@@ -46,7 +46,7 @@ There are pros as well:
 - Usually, the backend determines how new functionality will work on the backend.
 - Managers usually understand you less than frontend developers (you can walk around looking important).
 
-2.2. Mobile Development
+### 2.2. Mobile Development
 
 Venturing into mobile development is a viable option and not significantly more complex than frontend development. There is a specific aspect to it, and if you delve into it, mobile development might even seem simpler than frontend.
 
@@ -55,7 +55,7 @@ Downsides include:
 - You need to delve into pure mobile languages: Kotlin for Android or Swift for iOS (though I've heard about backend Swift, but that's for enthusiasts. Similarly, there's a similar opinion about Node.js).
 - You need to go through trials and tribulations before anything starts to make sense.
 
-2.3. Game Development
+### 2.3. Game Development
 
 Starting your career on this path isn't recommended. Game studios are few. If you're interested, consider studying this path as a pet project; that would make more sense in my opinion. However, if you're pursuing serious game development, you're unlikely to achieve much without these elements:
 
@@ -66,11 +66,11 @@ Starting your career on this path isn't recommended. Game studios are few. If yo
 
 On the flip side, there's quite a bit of information available online about Unity.
 
-2.4. Full Stack
+### 2.4. Full Stack
 
 There's also "full stack," which means a person is skilled in both frontend and backend, but this isn't an option for beginners.
 
-2.5. Frontend
+### 2.5. Frontend
 
 Saved the best for last. Frontend is a viable path for beginners. Furthermore, frontend developers are even paid more (though I can't understand why the hell).
 
